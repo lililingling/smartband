@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Path Planning List</title>
+</head>
+<style>
+    .inline {
+        display: inline-block;
+    }
+    b {
+        color: dodgerblue;
+    }
+</style>
+<body>
+<h1>路径规划</h1>
+<h2 class="inline" th:text="${origin}"/> ====> <h2 class="inline" th:text="${destination}"/>
+<div th:if="${list}">
+    <div th:each="item: ${list}">
+        <h4 th:utext="${item}"></h4>
+    </div>
+</div>
+</body>
+</html>
